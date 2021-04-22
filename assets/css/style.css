@@ -8,21 +8,6 @@ h1,h2,h3,p{
 
 /*------ header -----*/
 
-.global-navi{
-    
-}
-
-.btn-icon{
-
-}
-
-.global-navi ul{
-
-}
-
-.global-navi ul li{
-    
-}
 
 header{
     height: 70px;
@@ -56,6 +41,28 @@ header p{
     width: auto;
 }
 
+/*--hamburger-menu--*/
+#global-nav{
+
+}
+
+.nav-menu{
+    color: white;
+}
+
+.nav-list{
+    
+}
+
+.global-nav > ul{
+    display: flex;
+    justify-content: center;
+}
+
+
+.global-nav > ul >li{
+    font-size: 50px;
+}
 
 /*------ main -----*/
 /*---- top-view -----*/
@@ -173,13 +180,13 @@ main{
 /*------ contents -----*/
 
 .contents img{
-    height: 500px;
-    width: auto;
+    height: auto;
+    width: 95vw;
 }
 
 .contents-sub img{
-    height: 300px;
-    width: auto;
+    height: auto;
+    width: 350px;
 }
 
 /*#room{
@@ -199,7 +206,7 @@ main{
 
 .contents{
     padding-top: 40px;
-    width: 85vw;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -208,6 +215,7 @@ main{
 .contents-sub{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .contents-box{
@@ -254,24 +262,40 @@ main{
 
 
  /*----- access -----*/
-
-
- /*----- resavation -----*/
+ .contents iframe{
+     width: 70vw;
+ }
 
  /*----- contact -----*/
 
- /*
-#contact{
+    .contact-form{
+        width: 70%;
+        margin-bottom: 10px;
+        padding:2px;
+        font-size: 35px;
+    }
 
-}
-*/
-.contact-form{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
+    .contact-form input,textarea{
+        margin-bottom: 10px;
+        font-size: 20px;
+        width: 100%;
+    }
 
+    .contact-form > textarea{
+        height: 10vh;
+        width: 100%;
+    }
+
+    .contact-form{
+        padding:13px 25px;
+        color: white;
+        background-color: #223644;
+        margin:10px 0;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+
+/*----- resavation -----*/
     button{
         height: 70px;
         width:300px;
@@ -283,8 +307,7 @@ main{
         font-size: 20px;
     }
 
-
-    /*----- footer -----*/
+/*----- footer -----*/
 
     footer{
         display: flex;
@@ -299,6 +322,7 @@ main{
     .footer-left{
         padding-left:30px;
     }
+
     
 /*.footer-right{
     
