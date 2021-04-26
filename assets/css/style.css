@@ -6,6 +6,19 @@ h1,h2,h3,p{
     font-family: 'Kiwi Maru', serif;  
 }
 
+.wrapper{
+    max-width: 1200px;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.contents > img,section,.contents {
+    width: 85%;
+    max-width: 100%;
+    height: auto;
+    }
+    
 /*------ header -----*/
 
 
@@ -36,34 +49,6 @@ header p{
     width:auto;
 }
 
-.header-right img{
-    height: 30px;
-    width: auto;
-}
-
-/*--hamburger-menu--*/
-#global-nav{
-
-}
-
-.nav-menu{
-    color: white;
-}
-
-.nav-list{
-    
-}
-
-.global-nav > ul{
-    display: flex;
-    justify-content: center;
-}
-
-
-.global-nav > ul >li{
-    font-size: 50px;
-}
-
 /*------ main -----*/
 /*---- top-view -----*/
 
@@ -77,9 +62,8 @@ main{
     align-items: center;
     position: relative;
 }
-
 .album img{
-    height: 600px;
+    height:100vh;
     width: 100vw;
     background-size: cover;
     object-fit: cover;
@@ -179,14 +163,9 @@ main{
 
 /*------ contents -----*/
 
-.contents img{
-    height: auto;
-    width: 95vw;
-}
-
 .contents-sub img{
     height: auto;
-    width: 350px;
+    width: 30vw;
 }
 
 /*#room{
@@ -194,6 +173,7 @@ main{
 */  
 
 .container{
+    max-width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -212,10 +192,12 @@ main{
     justify-content: center;
     flex-direction: column;
 }
+
 .contents-sub{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .contents-box{
@@ -307,6 +289,10 @@ main{
         font-size: 20px;
     }
 
+    button a{
+        color: white;
+        text-decoration: none;
+    }
 /*----- footer -----*/
 
     footer{
@@ -351,4 +337,73 @@ main{
         width: 40px;
         height: 40px;
         padding-left:10px
+    }
+
+/*--hamburger-menu--*/
+#side-nav{
+    display: none;
+}
+
+.nav-menu{
+    top:40px;
+    display:flex;
+    justify-content:flex-end;
+    text-align:end;
+    align-items: flex-end;
+}
+
+.side-list{
+    font-size: 20px;
+    align-items: center;
+    padding: 10px 10px 10px 0;
+}
+
+.side-list > ul{
+    display: flex;
+    justify-content: center;
+}
+
+
+.side-list > ul >li{
+    padding-top:20px;
+}
+
+.hamburger-label{
+    right: 15px;
+    width: 35px;
+    height: 30px;
+    cursor:pointer;
+}
+
+.hamburger,.hamburger::before,.hamburger::after{
+    position: absolute;
+    height: 2px;
+    width: 35px;
+    background-color: white;
+    display: block;
+    content: '';
+    transition: all 1s;
+}
+
+.hamburger::before{
+    position: absolute;
+    top: 15px;
+}
+
+.hamburger::after{
+    position: absolute;
+    top:-15px;
+}
+
+#menu:checked ~ .hamburger-label > .hum
+    /*----- スマホ -----*/
+
+    @media and screen (max-width:780px){
+        .album img{
+            height:10vh;
+        }
+        .sub-name2{
+            text-align: center;
+        }
+
     }
