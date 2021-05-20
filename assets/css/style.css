@@ -396,14 +396,17 @@ main{
 }
 
 #menu:checked ~ .hamburger-label > .hum
-    /*----- スマホ -----*/
+{
 
-    @media and screen (max-width:780px){
+}
+    /*----- スマホ -----*/
+    /*----- printとかもある -----*/
+
+    @media screen and (max-width:780px){
         .album img{
             height:10vh;
         }
         .sub-name2{
             text-align: center;
         }
-
     }
